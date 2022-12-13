@@ -31,5 +31,7 @@ def predict():
     print(final_input)
     output=regmodel.predict(final_input)[0]
     return render_template("home.html",prediction_text="The House price predeciton is {}".format(output))
+
+
 if __name__=="__main__":
     app.run(debug=True)
